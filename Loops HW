@@ -1,0 +1,30 @@
+#Loops HW
+
+
+#Starting Inventory
+muffins = 10
+cupcakes = 10
+
+
+
+while True:
+    choice = input("Which baked good would you like to purchase today?: ")
+    if choice == "0":
+        break
+    if choice == "muffins":
+        if muffins > 0:
+            muffins -= 1
+            print("You purchased 1 muffin.")
+        else:
+            print("Sorry, we're out of stock")
+    elif choice == "cupcakes":
+        if cupcakes > 0:
+            cupcakes -= 1
+            print("You purchased 1 muffin.")
+        else:
+            print("Sorry, we're out of stock")
+    print("Cupcakes left:", cupcakes, "Muffins left:", muffins)
+
+
+print("Cupcakes and Muffins remaining:")
+print("Cupcakes", cupcakes, "Muffins:", muffins)
