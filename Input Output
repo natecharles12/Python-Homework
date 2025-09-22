@@ -1,0 +1,19 @@
+# Each pizza has 8 slices
+pizza_slices = 8
+
+# Input: ask each person how many slices they eat
+p1 = int(input("How many slices does person 1 eat? "))
+p2 = int(input("How many slices does person 2 eat? "))
+p3 = int(input("How many slices does person 3 eat? "))
+p4 = int(input("How many slices does person 4 eat? "))
+
+# Processing
+total_slices = p1 + p2 + p3 + p4
+pizzas = total_slices // pizza_slices
+if total_slices % pizza_slices != 0:
+    pizzas += 1
+leftover = pizzas * pizza_slices - total_slices
+
+# Output
+print("You need", pizzas, "whole pizzas.")
+print("There will be", leftover, "slices leftover.")
